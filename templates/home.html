@@ -15,13 +15,17 @@
    <center>
         <h1 style="color:green">Testing</h1>
         <br>
-        <form action="" method="post">
-            <input class="input-group-text" placeholder="Temperature" type="text" name="temperature"></input>
-            <button class="btn btn-success" type="submit">Predcit</button>
+        <form action="{{url_for('predict')}}" method="post">
+            <input class="input-group-text" placeholder="Avg Area Income" type="text" name="income"></input>
+            <input class="input-group-text" placeholder="Ave Area House Age" type="text" name="age"></input>
+            <input class="input-group-text" placeholder="Avg House Rooms" type="text" name="rooms"></input>
+            <input class="input-group-text" placeholder="Avg House Bed Rooms" type="text" name="bed_rooms"></input>
+            <input class="input-group-text" placeholder="Avg Are Population" type="text" name="population"></input>
+            <button class="btn btn-success" type="submit">Predict</button>
         </form>
         <br>
         <h4>
-            
+            {{text}}
         </h4>
     </center>
 </body>
